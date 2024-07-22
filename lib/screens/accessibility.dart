@@ -10,7 +10,7 @@ class DeviceManual extends StatefulWidget {
 }
 
 class _DeviceManualState extends State<DeviceManual> {
-  bool _isPanning = false;
+  final bool _isPanning = false;
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +49,9 @@ class _DeviceManualState extends State<DeviceManual> {
             ),
             
 
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 5),
-                child: const Divider(
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 5),
+                child: Divider(
                   color: Color.fromARGB(255, 212, 212, 212),
                   thickness: 1,
                   ),
@@ -70,7 +70,7 @@ class _DeviceManualState extends State<DeviceManual> {
                       margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
                       width: double.infinity,
                       height: 240,
-                      child: Stack(
+                      child: const Stack(
                         alignment: Alignment.center,
                         children: [
                         ],

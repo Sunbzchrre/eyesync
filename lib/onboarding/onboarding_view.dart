@@ -1,6 +1,5 @@
 import 'package:eyesync/components/color.dart';
 import 'package:eyesync/onboarding/onboarding_items.dart';
-import 'package:eyesync/screens/home_screen.dart';
 import 'package:eyesync/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -137,7 +136,7 @@ class _OnboardingViewState extends State<OnboardingView> {
             elevation: 10.0,
             borderRadius: BorderRadius.circular(10),
             color: primaryColor,
-            child: Container(
+            child: SizedBox(
               height: 53,
               child: TextButton(
                 onPressed: () async {

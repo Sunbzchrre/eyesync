@@ -25,7 +25,7 @@ class MainFeatures extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Container(
         decoration: BoxDecoration(
-            color: powerOn ? Color(0xFF8478F3) : secondaryColor,
+            color: powerOn ? const Color(0xFF8478F3) : secondaryColor,
             borderRadius: BorderRadius.circular(24)),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 25),

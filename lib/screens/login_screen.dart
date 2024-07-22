@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:eyesync/components/color.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
           backgroundColor: Colors.white,
           content: Container(
             width: 400,
-            padding: EdgeInsets.all(14.0),
+            padding: const EdgeInsets.all(14.0),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     labelStyle: GoogleFonts.poppins(fontSize: 15, color: thirdyColor)
                   ),
                 ),
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
             
                 SizedBox(
                   height: 40,
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: GoogleFonts.poppins(fontSize: 15, color: Colors.white, fontWeight: FontWeight.w600),),
                     ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
               ],
             ),
           ),
@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       TextFormField(
                         decoration: InputDecoration(
-                          suffixIcon: Icon(
+                          suffixIcon: const Icon(
                             Icons.check,
                             color: Colors.grey,
                           ),
@@ -130,7 +130,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             'Email',
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF8478F3),
+                              color: const Color(0xFF8478F3),
                             ),
                           ),
                         ),
@@ -167,7 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             'Password',
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF8478F3),
+                              color: const Color(0xFF8478F3),
                             ),
                           ),
                         ),
@@ -192,7 +192,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.normal,
                                   fontSize: 17,
-                                  color: Color.fromARGB(255, 199, 199, 199),
+                                  color: const Color.fromARGB(255, 199, 199, 199),
                                 ),
                               ),
                             ),

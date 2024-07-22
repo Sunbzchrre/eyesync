@@ -67,15 +67,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ListTile(
               leading:Icon(Icons.book, color: primaryColor),
-              title: Text("Device Manual",  style: GoogleFonts.poppins(fontSize: 17, color: Colors.black54, fontWeight: FontWeight.w500),),
-              onTap: (){
-                setState(() {
-                  Navigator.pushNamed(context, '/device-manual');
-                });
-              },
-            ),
-            ListTile(
-              leading:Icon(Icons.book, color: primaryColor),
               title: Text("Accessibility",  style: GoogleFonts.poppins(fontSize: 17, color: Colors.black54, fontWeight: FontWeight.w500),),
               onTap: (){
                 setState(() {
@@ -168,14 +159,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Hello There!',
+                    'Hi There!',
                     style:
                         GoogleFonts.poppins(fontSize: 20, color: Colors.black),
                   ),
                   Text(
-                    'BEBE KO, LOVE YOU',
+                    'GUARDIAN',
                     style: GoogleFonts.bebasNeue(
                       fontSize: 72,
+                      color: primaryColor,
                     ),
                   ),
                 ],
@@ -198,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
               child: Text(
-                'Main Featurers',
+                'EyeSync with EyeWalk',
                 style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w400,
                     fontSize: 24,

@@ -37,18 +37,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => SplashScreen(), // Initial route is the splash screen
+        '/': (context) => const SplashScreen(), // Initial route is the splash screen
         '/onboarding': (context) => const OnboardingView(),
         '/home': (context) => const HomeScreen(),
         '/welcome': (context) => const WelcomeScreen(),
         '/login': (context) => const LoginScreen(),
         '/registration': (context) => const RegistrationScreen(),
-        '/device-manual': (context) => DeviceManual(),
-        '/accessibility': (context) => AccessibilityScreen(),
-        '/profile': (context) => ProfileScreen(),
-        '/settings': (context) => SettingsScreen(),
-        '/feedback': (context) => FeedbackScreen(),
-        '/support': (context) => SupportScreen(),
+        '/device-manual': (context) => const DeviceManual(),
+        '/accessibility': (context) => const AccessibilityScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/settings': (context) => const SettingsScreen(),
+        '/feedback': (context) => const FeedbackScreen(),
+        '/support': (context) => const SupportScreen(),
       },
     );
   }

@@ -1,16 +1,17 @@
-import 'package:eyesync/components/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
         title: Text('Profile', style: GoogleFonts.poppins(color: Colors.white)),
-        backgroundColor: Color(0xFF8478F3),
+        backgroundColor: const Color(0xFF8478F3),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -23,7 +24,7 @@ class ProfileScreen extends StatelessWidget {
                 backgroundImage: AssetImage('assets/images/profile.jpg'),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Center(
               child: Text(
                 'Rheaann Gonzales', 
@@ -33,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Center(
               child: Text(
                 'eyesync@gmail.com', // Replace with actual user email
@@ -43,7 +44,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Text(
               'Account Details',
               style: GoogleFonts.poppins(
@@ -51,9 +52,9 @@ class ProfileScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Divider(thickness: 2),
+            const Divider(thickness: 2),
             ListTile(
-              leading: Icon(Icons.person),
+              leading: const Icon(Icons.person),
               title: Text(
                 'Full Name',
                 style: GoogleFonts.poppins(fontSize: 16),
@@ -64,7 +65,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.email),
+              leading: const Icon(Icons.email),
               title: Text(
                 'Email',
                 style: GoogleFonts.poppins(fontSize: 16),
@@ -75,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.phone),
+              leading: const Icon(Icons.phone),
               title: Text(
                 'Phone Number',
                 style: GoogleFonts.poppins(fontSize: 16),
@@ -86,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.location_city),
+              leading: const Icon(Icons.location_city),
               title: Text(
                 'Address',
                 style: GoogleFonts.poppins(fontSize: 16),

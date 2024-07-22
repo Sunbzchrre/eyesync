@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:eyesync/components/color.dart';
 
 class RegistrationScreen extends StatefulWidget {
-  const RegistrationScreen({Key? key}) : super(key: key);
+  const RegistrationScreen({super.key});
 
   @override
   _RegistrationScreenState createState() => _RegistrationScreenState();
@@ -124,7 +124,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               ]),
             ),
             child: Padding(
-              padding: EdgeInsets.only(top: 60.0, left: 22),
+              padding: const EdgeInsets.only(top: 60.0, left: 22),
               child: Text(
                 'Create Your\nAccount',
                 style: GoogleFonts.poppins(
@@ -156,7 +156,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     children: [
                       TextFormField(
                         decoration: InputDecoration(
-                          suffixIcon: Icon(
+                          suffixIcon: const Icon(
                             Icons.check,
                             color: Colors.grey,
                           ),
@@ -164,7 +164,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             'Full Name',
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF8478F3),
+                              color: const Color(0xFF8478F3),
                             ),
                           ),
                         ),
@@ -179,7 +179,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         height: 15,
                       ),
                       TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           suffixIcon: Icon(
                             Icons.check,
                             color: Colors.grey,
@@ -226,7 +226,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             'Password',
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF8478F3),
+                              color: const Color(0xFF8478F3),
                             ),
                           ),
                         ),
@@ -265,7 +265,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             'Confirm Password',
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF8478F3),
+                              color: const Color(0xFF8478F3),
                             ),
                           ),
                         ),
