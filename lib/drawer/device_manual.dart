@@ -26,9 +26,10 @@ class _DeviceManualState extends State<DeviceManual> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // 'Get Started' Text with Divider
+
+            // 'Get Started' Text
             Padding(
-              padding: const EdgeInsets.only(left: 16.0, top: 20.0, bottom: 15.0),
+              padding: const EdgeInsets.only(left: 16.0, top: 20.0, bottom: 5.0),
               child: Text(
                 'Let\'s Get Started...',
                 textAlign: TextAlign.left,
@@ -38,18 +39,20 @@ class _DeviceManualState extends State<DeviceManual> {
                 ),
               ),
             ),
+
             const Divider(
-              height: 20,
+              height: 15,
               thickness: 1,
-              color: Colors.black26,
+              color: thirdyColor,
               indent: 16.0,
               endIndent: 16.0,
             ),
+
             // Main Image
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
               width: double.infinity,
-              height: 240,
+              height: 205.0,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
@@ -68,11 +71,19 @@ class _DeviceManualState extends State<DeviceManual> {
                 ],
               ),
             ),
-            // 'Other essential guides' Text
+
+            const Divider(
+              height: 15,
+              thickness: 1,
+              color: thirdyColor,
+              indent: 16.0,
+              endIndent: 16.0,
+            ),
+
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
               child: Text(
-                'Other essential guides',
+                'Other EyeWalk User Guides',
                 style: GoogleFonts.poppins(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -100,31 +111,30 @@ class _DeviceManualState extends State<DeviceManual> {
   }
 
   Widget _buildGridItem(String imagePath) {
-    return Material(
-      elevation: 5.0, // Elevation effect
-      borderRadius: BorderRadius.circular(10.0),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10.0), // Rounded edges
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          color: Colors.grey, // Gray background color
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Image.asset(
-                imagePath,
-                fit: BoxFit.cover,
-              ),
-              const Icon(
-                Icons.play_arrow_rounded,
-                size: 60,
-                color: Colors.white,
-              ),
-            ],
+  return Material(
+    elevation: 5.0, // Elevation effect
+    child: Container(
+      width: double.infinity,
+      height: 200.0,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          Image.asset(
+            imagePath,
+            width: 800,
+            height: 700,
+            fit: BoxFit.fill,
           ),
-        ),
+          const Icon(
+            Icons.play_arrow_rounded,
+            size: 60,
+            color: Colors.white,
+          ),
+        ],
       ),
-    );
-  }
+    ),
+  );
+}
+
+
 }

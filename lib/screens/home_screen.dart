@@ -193,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 'EyeSync with EyeWalk',
                 style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w400,
-                    fontSize: 24,
+                    fontSize: 20,
                     color: const Color.fromARGB(255, 212, 212, 212)),
               ),
             ),

@@ -43,7 +43,6 @@ class MyApp extends StatelessWidget {
         '/welcome': (context) => const WelcomeScreen(),
         '/login': (context) => const LoginScreen(),
         '/registration': (context) => const RegistrationScreen(),
-        '/device-manual': (context) => const DeviceManual(),
         '/accessibility': (context) => const AccessibilityScreen(),
         '/profile': (context) => const ProfileScreen(),
         '/settings': (context) => const SettingsScreen(),
