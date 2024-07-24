@@ -23,137 +23,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
         backgroundColor: primaryColor,
       ),
+
       body: Stack(
         children: [
           ListView(
-            padding: const EdgeInsets.only(top: 60.0, left: 10.0, right: 10.0), 
+            padding: const EdgeInsets.only(top: 80.0, left: 10.0, right: 10.0), 
             children: [
-              // FAQs section
-              const Padding(
-                padding: EdgeInsets.only(left: 16.0, top: 20.0, bottom: 5.0),
-                child: Text(
-                  'Personalize Themes',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-              ),
-
-              const Divider(
-                height: 30,
-                thickness: 1,
-                color: thirdyColor,
-                indent: 16.0,
-                endIndent: 16.0,
-              ),
-
-              // Horizontal list view for the themes
-              Container(
-                height: 350.0,
-                margin: const EdgeInsets.only(left: 50.0),
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(right: 8.0),
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                              width: 150.0,
-                              height: 280.0,
-                              color: Colors.grey,
-                              child: Image.asset(
-                                '/images/themes/light.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8.0),
-                          Text(
-                            'Default (Light)',
-                            style: GoogleFonts.poppins(fontSize: 14.0, fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    Container(
-                      margin: const EdgeInsets.only(right: 8.0),
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                              width: 150.0,
-                              height: 280.0,
-                              color: Colors.grey,
-                              child: Image.asset(
-                                '/images/themes/dim.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8.0),
-                          Text(
-                            'Dim Light',
-                            style: GoogleFonts.poppins(fontSize: 14.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(right: 8.0),
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                              width: 150.0,
-                              height: 280.0,
-                              color: Colors.grey,
-                              child: Image.asset(
-                                '/images/themes/dark.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8.0),
-                          Text(
-                            'Dark',
-                            style: GoogleFonts.poppins(fontSize: 14.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(right: 8.0),
-                      child: Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
-                            child: Container(
-                              width: 150.0,
-                              height: 280.0,
-                              color: primaryColor,
-                              child: const Icon(
-                                Icons.add_rounded,
-                                size: 80,
-                                color: secondaryColor,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 8.0),
-                          Text(
-                            'Add Theme',
-                            style: GoogleFonts.poppins(fontSize: 14.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
 
               // Settings List
               Card(
@@ -192,7 +67,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ],
                 ),
               ),
-              const SizedBox(height: 15.0),
+              const SizedBox(height: 10.0),
               Card(
                 margin: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
                 elevation: 5.0,
@@ -213,7 +88,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   onTap: () {},
                 ),
               ),
-              const SizedBox(height: 15.0),
+              const SizedBox(height: 10.0),
               Card(
                 margin: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
                 elevation: 5.0,
