@@ -16,3 +16,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Contributor Guidelines
+
+1. When commiting changes, make sure to create a note on the description box of the changes that have been made.
+2. Inform groupmates about the status of the project in the groupchat.
