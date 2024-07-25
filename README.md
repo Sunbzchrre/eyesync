@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+EyeSync is an application designed to seamlessly integrate with the EyeWalk device, an IoT-enabled navigation tool for visually impaired individuals. This application serves as a vital companion for guardians, providing real-time tracking of the device user, projecting the device's battery life, and offering step-by-step instructions on how to use and troubleshoot the device. 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
